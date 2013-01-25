@@ -1,0 +1,270 @@
+/*The body is set to a minimum width of 1000 pixels 
+and a maximum width of 1100 pixels*/
+body {
+width:90%;
+margin:0 auto;
+text-align:center;
+min-width:1000px;
+max-width:1100px;
+background-image:url(../img/tex.png);
+background-repeat:repeat;
+font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+/*This allows the content to have a scrool bar if it runs
+outside of the window*/
+#content {
+overflow:auto;
+}
+
+/*This sets up a 1% margin aroung the navigation bar,
+the header, and the footer*/
+#nav,#feature,#footer {
+margin:1%;
+}
+
+/*styles "panels" so that they take up a third of the window*/
+.pan {
+width:31.3%;
+float:left;
+margin:1%;
+border-radius:20px;
+}
+
+/*Sets a background gradient to the register button. If the browser
+does not support CSS3 gradients, then this will not show up.*/
+#three {
+margin-right: 0%;
+background-image: linear-gradient(bottom, #5CAB06 30%, #78CE20 65%);
+background-image: -o-linear-gradient(bottom, #5CAB06 30%, #78CE20 65%);
+background-image: -moz-linear-gradient(bottom, #5CAB06 30%, #78CE20 65%);
+background-image: -webkit-linear-gradient(bottom, #5CAB06 30%, #78CE20 65%);
+background-image: -ms-linear-gradient(bottom, #5CAB06 30%, #78CE20 65%);
+
+background-image: -webkit-gradient(
+linear,
+left bottom,
+left top,
+color-stop(0.3, #5CAB06),
+color-stop(0.65, #78CE20);
+);
+}
+
+/*Sets the background color for the navigation bar.
+Sets some padding.*/
+#nav {
+background-color:#efefef;
+padding:.3em 0;
+}
+
+/*Sets the background image of the footer, and the
+color of the text*/
+#footer {
+background-image:url(../img/colors.jpg);
+color:#FFF;
+}
+
+#feature,.pan {
+height:22em;
+margin-bottom:.5em;
+overflow:hidden;
+}
+
+/*Styles the giant image on the main page.*/
+#imageSlide {
+width:100%;
+overflow:hidden;
+height:160%;
+z-index:-99;
+}
+
+/* Countdown css for the Countdown clock on the main page. If the
+browser doesn'r not support CSS3 box shadows, then some formatting 
+will not show up.*/
+#Countdown {
+font-size:12px;
+width:95%;
+margin:2.5%;
+height:95%;
+border-radius:5px;
+box-shadow:0 0 2px black, 2px 5px 10px yellow, -2px 4px 10px lime, -2px -5px 10px blue, 2px -5px 10px red;
+background-color:#F7F7F7;
+}
+
+/*changes the font size of the color of the countdown*/
+#Countdown div#Cd_Header {
+font-size:20px;
+text-align:center;
+margin:4%;
+}
+
+/*changes the font size of the color of the countdown*/
+#Countdown div#Days {
+font-size:80px;
+}
+
+/*changes the font size of the color of the countdown*/
+#Countdown div#Hours {
+font-size:60px;
+color:blue;
+}
+
+/*changes the font size of the color of the countdown*/
+#Countdown div#Minutes {
+font-size:40px;
+color:green;
+}
+
+/*changes the font size of the color of the countdown*/
+#Countdown div#Seconds {
+font-size:20px;
+color:red;
+}
+
+/*This styles the table for the countdown.
+It makes the countdown diagonal.*/
+table {
+empty-cells: show;
+width:90%;
+margin:0 auto;
+text-align:left;
+}
+
+/*aligns the text to the vertical middle*/
+td {
+vertical-align: middle;
+}
+
+/*styles the main menu and sub-menus*/
+.myMenu {
+margin:0;
+padding:0;
+z-index:30;
+}
+
+/*Styles the main menu*/
+.myMenu li.top {
+width:15%;
+margin-left:2.5%;
+margin-right:2.5%;
+list-style:none;
+float:left;
+font-size:14px;
+font-weight:bolder;
+position: relative;
+}
+
+.myMenu li a:link,.myMenu li a:visited {
+display:block;
+text-decoration:none;
+background-image:url(../img/colors.jpg);
+padding:.5em 2em;
+margin:0;
+box-shadow:0 0 5px 5px #DFDFDF;
+color:#FFF;
+}
+
+/*this formats the menu when you hover over it.
+It changes the color of thetext of the top
+menu to yellow*/
+.myMenu li a:hover {
+background-color:#FFF;
+color: yellow;
+width: auto;
+
+}
+
+/*styles the sub menus*/
+.myMenu li ul {
+position:absolute;
+display:none;
+border-top:1px solid #fff;
+width:100%;
+padding:0;
+z-index:50;
+}
+
+/*Displays the sub menu to appear on one line*/
+.myMenu li ul li {
+display:inline;
+float:none;
+}
+
+/*Styles the sub-menu text color to red when you hover
+on the sub-menu*/
+.myMenu li ul li a:hover {
+background-color:#0CF;
+color: red;
+}
+
+/*Makes the drop menu appear above the image slide on the
+home page*/
+div.above {
+z-index:99;
+}
+
+/*This styles the register button. This uses CSS3 gradients to add
+color to the button. This color will not show up in a browser that
+does not support CSS3 gradients. */
+button {
+color: white;
+font-size: 35px;
+width: 60%;
+height: 30%;
+left-margin: 20%;
+right-margin: 20%;
+margin-top: 35%;
+margin-bottom: 35%;
+background-image: linear-gradient(bottom, #2F2E42 36%, #424247 68%);
+background-image: -o-linear-gradient(bottom, #2F2E42 36%, #424247 68%);
+background-image: -moz-linear-gradient(bottom, #2F2E42 36%, #424247 68%);
+background-image: -webkit-linear-gradient(bottom, #2F2E42 36%, #424247 68%);
+background-image: -ms-linear-gradient(bottom, #2F2E42 36%, #424247 68%);
+
+background-image: -webkit-gradient(
+linear,
+left bottom,
+left top,
+color-stop(0.36, #2F2E42),
+color-stop(0.68, #424247)
+);
+
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+/* CSS for the FAQs page. If the browser doesn't
+support CSS3 gradients, then this will not show up.*/
+#holder h3 {
+width: 40%;
+height: 50px;
+margin-left: 30%;
+margin-right: 30%;
+color: white;
+font-weight: bold;
+border-radius: 10px;
+
+background-image: linear-gradient(bottom, rgb(255,243,15) 14%, rgb(7,222,114) 60%, rgb(55,48,255) 87%);
+background-image: -o-linear-gradient(bottom, rgb(255,243,15) 14%, rgb(7,222,114) 60%, rgb(55,48,255) 87%);
+background-image: -moz-linear-gradient(bottom, rgb(255,243,15) 14%, rgb(7,222,114) 60%, rgb(55,48,255) 87%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,243,15) 14%, rgb(7,222,114) 60%, rgb(55,48,255) 87%);
+background-image: -ms-linear-gradient(bottom, rgb(255,243,15) 14%, rgb(7,222,114) 60%, rgb(55,48,255) 87%);
+
+background-image: -webkit-gradient(
+linear,
+left bottom,
+left top,
+color-stop(0.14, rgb(255,243,15)),
+color-stop(0.6, rgb(7,222,114)),
+color-stop(0.87, rgb(55,48,255))
+);
+}
+
+/*This styles the answers to the FAQ's*/
+#holder div {
+display:none;
+width:40%;
+margin:0 auto;
+color:red;
+}

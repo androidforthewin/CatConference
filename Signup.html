@@ -1,0 +1,306 @@
+<!--
+Created By: Tim Henderson
+
+This page is to be used for users to register for the conference.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+
+    <title>Cat Fanatics Conference</title>
+    <link rel="stylesheet" type="text/css" href="css/ConferenceProject.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/ConferenceProject.js"></script>
+    
+    <style type="text/css">
+    .clear {
+      clear:both;
+    }
+    /* Used for a two column layout */
+    .Col_Container {
+      width: 100%;
+      margin-left:25%;
+      margin-right:25%;
+    }
+    .column {
+      float:left;
+      width:25%;
+      text-align:left;
+      margin:0px; padding:0px;
+    }
+    </style>
+    <script type="text/javascript">
+    // script to verify that the form was filled out correctly
+    function verifyForm()
+    {
+      if (Signup.FirstName.value == "") {
+        alert("Please enter your first name.");
+        Signup.FirstName.focus();
+        return false;
+      }
+      else if (Signup.LastName.value == "") {
+        alert("Please enter your last name.");
+        Signup.LastName.focus();
+        return false;
+      }
+      else if (Signup.Email.value == "") {
+        alert("Please enter your email address.");
+        Signup.Email.focus();
+        return false;
+      }
+      else if (Signup.StreetAddress.value == "") {
+        // only the first line is checked because not everyone needs the second line
+        alert("Please enter your street address.");
+        Signup.StreetAddress.focus();
+        return false;
+      }
+      else if (Signup.City.value == "") {
+        alert("Please enter your city.");
+        Signup.City.focus();
+        return false;
+      }
+      else if (Signup.State.value == "") {
+        alert("Please enter your state.");
+        Signup.State.focus();
+        return false;
+      }
+      else if (Signup.ZipCode.value == "") {
+        alert("Please enter your zip code.");
+        Signup.ZipCode.focus();
+        return false;
+      }
+      else if (Signup.Country.value == "") {
+        alert("Please select your country.");
+        Signup.Country.focus();
+        return false;
+      }
+      else {
+        return true;
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="header">
+      <!-- standard header -->
+      <img id="banner" src="img/catBanner3.jpg" alt="Cat Fanatics Conference 2012" name=
+      "banner" />
+      <hr />
+      <!-- start of navigation bar -->
+      <div id="nav" class="above">
+        <ul class="myMenu">
+          <li class="top"><a href="ConferenceProject.html">Home</a></li>
+
+          <li class="top">
+            <a href="#">Schedule</a>
+
+            <ul>
+              <li><a href="ConferenceProgram.html">Events</a></li>
+
+              <li><a href="ConferenceCalendar.html">Calendar</a></li>
+            </ul>
+          </li>
+
+          <li class="top">
+            <a href="#">Photo Gallery</a>
+
+            <ul>
+              <li><a href="ConventionCenter.html">Las Vegas</a></li>
+
+              <li><a href="LastConference.html">2011 Conference</a></li>
+            </ul>
+          </li>
+
+          <li class="top"><a href="Contact.html">Contact Us!</a></li>
+
+          <li class="top"><a href="FAQ.html">FAQ</a></li>
+        </ul>
+
+        <div style="clear:both"></div>
+      </div>
+    </div>
+    
+    <!-- Start of Page-Specific Content -->
+
+    <div id="content">
+      <h1>2012 Registration</h1>
+
+      <p>Please complete this registration form, continue to the billing page, enter your
+      information, click submit and get excited because you're going to the Cat Fanatics
+      Conference!</p>
+
+      <form action="submit.html" method="post" name="Signup" id="Signup">
+        <h2>Your Information</h2>
+
+        <div class="Col_Container">
+          <div class="column">
+            <p><strong>Name *</strong></p>
+
+            <p>First <input type="text" name="FirstName" size="15" /></p>
+
+            <p>Last <input type="text" name="LastName" size="20" /></p>
+          </div>
+
+          <div class="column">
+            <p><strong>Email *</strong></p>
+
+            <p><input type="text" name="Email" size="40" /></p>
+
+            <p>The registration confirmation will be sent to this email address.</p>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <p><strong>Address *</strong></p>
+
+        <p>Street Address<br />
+        <input type="text" name="StreetAddress" size="60" /></p>
+
+        <p>Address Line 2<br />
+        <input type="text" name="AddressLine2" size="60" /></p>
+
+        <div class="Col_Container">
+          <div class="column">
+            <p>City<br />
+            <input type="text" name="City" size="30" /></p>
+
+            <p>Postal / Zip Code<br />
+            <input type="text" name="ZipCode" size="30" /></p>
+          </div>
+
+          <div class="column">
+            <p>State / Region<br />
+            <input type="text" name="State" size="30" /></p>
+
+            <p>Country<br />
+            <select name="Country">
+              <option value="United States">
+                United States
+              </option>
+
+              <option value="United Kingdom">
+                United Kingdom
+              </option>
+
+              <option value="Australia">
+                Australia
+              </option>
+
+              <option value="Canada">
+                Canada
+              </option>
+
+              <option value="Mexico">
+                Mexico
+              </option>
+            </select></p>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <h2>Main Conference Registration</h2>
+
+        <p>How many main conference passes would you like?</p><select name=
+        "MainConfPasses">
+          <option value="0" selected="selected">
+            0
+          </option>
+
+          <option value="1">
+            1
+          </option>
+
+          <option value="2">
+            2
+          </option>
+
+          <option value="3">
+            3
+          </option>
+
+          <option value="4">
+            4
+          </option>
+
+          <option value="5">
+            5
+          </option>
+
+          <option value="6">
+            6+
+          </option>
+        </select>
+
+        <h2>Main Conference Student Registration</h2>
+
+        <p>How many main conference student passes would you like?</p><select name=
+        "MainConfStudPasses">
+          <option value="0" selected="selected">
+            0
+          </option>
+
+          <option value="1">
+            1
+          </option>
+
+          <option value="2">
+            2
+          </option>
+
+          <option value="3">
+            3
+          </option>
+
+          <option value="4">
+            4
+          </option>
+
+          <option value="5">
+            5
+          </option>
+
+          <option value="6">
+            6+
+          </option>
+        </select>
+
+        <h2>Feedback</h2>
+
+        <p>How did you hear about the conference</p>
+
+        <div class="Col_Container">
+          <div class="column">
+            <input type="radio" name="Feedback" value="Friend" />Friend<br />
+            <input type="radio" name="Feedback" value="Website" />Website<br />
+            <input type="radio" name="Feedback" value="Other" />Other<br />
+            <input type="text" name="OtherFeedback" size="20" />
+          </div>
+
+          <div class="column">
+            <input type="radio" name="Feedback" value="Facebook" />Facebook<br />
+            <input type="radio" name="Feedback" value="LastYear" />Last Years
+            Conference<br />
+          </div>
+        </div>
+
+        <div class="clear"></div><input type="submit" onclick="return verifyForm();" />
+      </form>
+    </div>
+
+    <div id="footer">
+      <!-- standard footer -->
+
+      <p>&copy; Copyright 2012</p>
+    </div>
+  </body>
+</html>

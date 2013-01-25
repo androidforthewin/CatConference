@@ -1,0 +1,102 @@
+<!--
+Created By: Allison Nicol
+
+This page shows the conference calendar through the use of a Google Calendar plug-in.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+
+    <title>Cat Fanatics Conference</title>
+    <link rel="stylesheet" type="text/css" href="css/ConferenceProject.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/ConferenceProject.js"></script>
+      
+    <style type="text/css">
+    #cal {
+      /* Adds the standard border around events. */
+      border-radius:5px;
+      box-shadow:
+        0 0 2px black,
+        2px 5px 10px yellow,
+        -2px 5px 10px lime,
+        -2px -5px 10px blue,
+        2px -5px 10px red;
+      background-color: #F7F7F7;
+      padding: 10px;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <!-- standard header -->
+      <img id="banner" src="img/catBanner3.jpg" alt="Cat Fanatics Conference 2012" name=
+      "banner" />
+      <hr />
+      <!-- start of navigation bar -->
+      <div id="nav" class="above">
+        <ul class="myMenu">
+          <li class="top"><a href="ConferenceProject.html">Home</a></li>
+
+          <li class="top">
+            <a href="#">Schedule</a>
+
+            <ul>
+              <li><a href="ConferenceProgram.html">Events</a></li>
+
+              <li><a href="ConferenceCalendar.html">Calendar</a></li>
+            </ul>
+          </li>
+
+          <li class="top">
+            <a href="#">Photo Gallery</a>
+
+            <ul>
+              <li><a href="ConventionCenter.html">Las Vegas</a></li>
+
+              <li><a href="LastConference.html">2011 Conference</a></li>
+            </ul>
+          </li>
+
+          <li class="top"><a href="Contact.html">Contact Us!</a></li>
+
+          <li class="top"><a href="FAQ.html">FAQ</a></li>
+        </ul>
+
+        <div style="clear:both"></div>
+      </div>
+    </div>
+    
+    <!-- Start of Page-Specific Content -->
+    
+    <br />
+
+    <div id="content">
+      <div id="cal">
+        <!-- This uses the Google embedded calendar, with modification to arguments as necessary. -->
+        <iframe src=
+        "https://www.google.com/calendar/embed?showTabs=0&amp;showCalendars=0&amp;title=Cat%20Fanatics%20Conference%20Schedule&amp;mode=WEEK&amp;height=600&amp;wkst=5&amp;bgcolor=%23FFFFFF&amp;src=catfanaticsconference%40gmail.com&amp;color=%23528800&amp;ctz=America/Los_Angeles&amp;dates=20121101/20121105"
+        style=" border-width:0" width="800" height="600" frameborder="0" scrolling=
+        "no"></iframe>
+      </div>
+    </div>
+
+    <div id="footer">
+      <!-- standard footer -->
+
+      <p>&copy; Copyright 2012</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!--
+Created By: Tim Henderson
+
+This page is to showcase pictures from previous conferences.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+
+    <title>Cat Fanatics Conference</title>
+    <link rel="stylesheet" type="text/css" href="css/ConferenceProject.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/ConferenceProject.js"></script>
+    
+    <style type="text/css">
+    div {
+      position:block;
+    }
+
+   #Img_Main {
+      width:100%;
+      height:300px;
+      margin-bottom: 25px;
+    }
+    #Img_Main img {
+      text-align:center;
+      max-width:600px;
+      height:300px;
+      border-radius:5px;
+      box-shadow:
+        0 0 2px black,
+        2px 5px 10px yellow,
+        -2px 5px 10px lime,
+        -2px -5px 10px blue,
+        2px -5px 10px red;
+      background-color: #F7F7F7;
+      padding: 3px;
+      margin: 15px;
+    }
+    /* The thumbnail images */
+    #Img_Thumbs {
+      margin-top:25px;
+      min-width:600px;
+    }
+    #Img_Thumbs img {
+      max-width:150px;
+      height:100px;
+      border-radius:5px;
+      box-shadow:
+        0 0 2px black,
+        2px 5px 10px yellow,
+        -2px 5px 10px lime,
+        -2px -5px 10px blue,
+        2px -5px 10px red;
+      background-color: #F7F7F7;
+      padding: 3px;
+      margin: 15px;
+    }
+    </style>
+    <script type="text/javascript">
+    // script to switch the images on rollover
+    function switchImage(obj)
+    {
+      var src = $(obj).attr("src");
+      //$(obj).attr("src",$ ("#Img_Main img").attr("src"));
+      $("#Img_Main img").attr("src",src);
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="header">
+      <!-- standard header -->
+      <img id="banner" src="img/catBanner3.jpg" alt="Cat Fanatics Conference 2012" name=
+      "banner" />
+      <hr />
+      <!-- start of navigation bar -->
+      <div id="nav" class="above">
+        <ul class="myMenu">
+          <li class="top"><a href="ConferenceProject.html">Home</a></li>
+
+          <li class="top">
+            <a href="#">Schedule</a>
+
+            <ul>
+              <li><a href="ConferenceProgram.html">Events</a></li>
+
+              <li><a href="ConferenceCalendar.html">Calendar</a></li>
+            </ul>
+          </li>
+
+          <li class="top">
+            <a href="#">Photo Gallery</a>
+
+            <ul>
+              <li><a href="ConventionCenter.html">Las Vegas</a></li>
+
+              <li><a href="LastConference.html">2011 Conference</a></li>
+            </ul>
+          </li>
+
+          <li class="top"><a href="Contact.html">Contact Us!</a></li>
+
+          <li class="top"><a href="FAQ.html">FAQ</a></li>
+        </ul>
+
+        <div style="clear:both"></div>
+      </div>
+    </div>
+    
+    <!-- Start of Page-Specific Content -->
+
+    <div id="content">
+      <h1>Images from Previous Conferences</h1>
+
+      <div style="text-align:center;width:100%;">
+        <div id="Img_Main"><img src="img/cat8.jpg" /></div>
+
+        <div id="Img_Thumbs">
+          <img src="img/cat8.jpg" alt="Cat Image 1" onmouseover="switchImage(this);" />
+          <img src="img/cat9.jpg" alt="Cat Image 2" onmouseover="switchImage(this);" />
+          <img src="img/cat10.jpg" alt="Cat Image 3" onmouseover="switchImage(this);" />
+          <img src="img/cat11.jpg" alt="Cat Image 4" onmouseover="switchImage(this);" />
+          <img src="img/cat12.jpg" alt="Cat Image 5" onmouseover="switchImage(this);" />
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <!-- standard footer -->
+
+      <p>&copy; Copyright 2012</p>
+    </div>
+  </body>
+</html>
